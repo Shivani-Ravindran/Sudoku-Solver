@@ -16,6 +16,9 @@ function createGrid(gridElement, editable = false) {
 
 function clearGrid() {
     stopSolving = true;   
+    document.querySelector(".bfs-msg").innerHTML = "&nbsp;";
+    document.querySelector(".dfs-msg").innerHTML = "&nbsp;";
+    document.querySelector(".ga-msg").innerHTML = "&nbsp;";
     createGrid(document.getElementById("input-grid"), true);
     createGrid(document.getElementById("naive-grid"));
     createGrid(document.getElementById("best-grid"));
