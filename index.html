@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Sudoku Solver</h2>
+    <h3>Input</h3>
+    <div id="input-grid" class="grid"></div>
+
+    <h3>Solvers</h3>
+    <div class="solver-row">
+    <div>
+        <p>Naive DFS</p>
+        <div id="naive-grid" class="grid"></div>
+        <p class="dfs-msg">&nbsp;</p>
+    </div>
+    <div>
+        <p>Best First</p>
+        <div id="best-grid" class="grid"></div>
+        <p class="bfs-msg">&nbsp;</p>
+    </div>
+    <div>
+        <p>Genetic Algorithm</p>
+        <div id="ga-grid" class="grid"></div>
+        <p class="ga-msg">&nbsp;</p>
+    </div>
+    </div>
+
+    <button class="solveBtn">Solve</button>
+    <button onclick="clearGrid()">Clear</button>
+    <p id="message"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

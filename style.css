@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-gap: 0;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+input {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+input:nth-child(3n) {
+  border-right: 2px solid black;
+}
+
+input:nth-child(n+19):nth-child(-n+27),
+input:nth-child(n+46):nth-child(-n+54) {
+  border-bottom: 2px solid black;
+}
+
+.solver-row{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bfs-msg, .dfs-msg, .ga-msg{
+  margin-bottom : 3rem;
+}
