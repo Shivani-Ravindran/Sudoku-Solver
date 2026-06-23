@@ -3,6 +3,7 @@
   <head>
     <title>Sudoku Solver</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <h2>Sudoku Solver</h2>
@@ -29,8 +30,18 @@
     </div>
 
     <button class="solveBtn">Solve</button>
+    <button class="benchmarkBtn">Benchmark</button>
     <button onclick="clearGrid()">Clear</button>
     <p id="message"></p>
+
+    <div id="benchmark-results" style="display: none; margin-top: 30px;">
+        <h3>Benchmark Results</h3>
+        <div class="stats-container" id="benchmark-stats"></div>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <canvas id="benchmarkChart"></canvas>
+        </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
